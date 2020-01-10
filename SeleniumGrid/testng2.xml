@@ -1,0 +1,18 @@
+<suite name="Suite" parallel="tests">
+	<test name="TestChrome">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="user" value="manager"/>
+		<parameter name="appUrl" value="http://localhost:4444/wd/hub"/>
+		<classes>
+			<class name="Grid1.grid2"/>
+		</classes>
+	</test>
+	<test name="TestFireFox">
+		<parameter name="browser" value="firefox"/>
+		<parameter name="user" value="manager"/>
+		<parameter name="appUrl" value="http://localhost:4444/wd/hub"/>
+		<classes>
+			<class name="Grid1.grid2"/>
+		</classes>
+	</test>
+</suite> 

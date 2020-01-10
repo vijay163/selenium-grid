@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefor"/>
+  <parameter name="appUrl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="user" value="admin"/>
+  <test name="TestChrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="appUrl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="user" value="admin"/>
+    <classes>
+      <class name="Grid1.grid2">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Grid1.grid2 -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test name="TestFireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefor"/>
+    <parameter name="appUrl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="user" value="admin"/>
+    <classes>
+      <class name="Grid1.grid2">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Grid1.grid2 -->
+    </classes>
+  </test> <!-- TestFireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,17 @@
+
+<suite name="Suite" parallel="tests">
+  <test name="TestChrome">
+  <parameter name="user" value="admin"/>
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Grid1.paractice"/>
+    </classes>
+  </test>
+  <test name="TestFireFox">
+  <parameter name="user" value="admin"/>
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Grid1.paractice"/>
+    </classes>
+  </test>
+</suite> 
